@@ -1,74 +1,124 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border_box;
-    font-family: 'Poppins', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: #eff0f4;
-}
-
-.container {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 50px 0;
-    gap: 40px 60px;
-}
-
-.container .drop {
-    position: relative;
-    width: 350px;
-    height: 350px;
-    background: #333;
-    box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0), 20px 35 px 20px rgba (0, 0, 0, 05), 25px 30px 30px rgba(0, 0, 0, 0), 20px 35 px 20px rgba (), inset -20px -20px 25px rgba (255, 2555, 255, 0.9);
-    transition: 0.5s ease-in-out;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.container .drop:nth-child(1) {
-    border-radius: 57% 43% 43% 57% /43% 43% 57% 57%;
-}
-
-.container .drop:nth-child(2) {
-    border-radius: 61% 39% 52% 48% /44% 59% 41% 56%;
-}
-
-.container .drop:nth-child(3) {
-    border-radius: 35% 65% 31% 69% /57% 59% 41% 43%;
-}
-
-.container .drop:hover {
-    border-radius: 50%;
-}
-
-.container .drop::before {
-    content: '';
-    position: absolute;
-    width: 35px;
-    height: 35px;
-    background-color: #fff;
-    border-radius: 50%;
-    top: 50px;
-    left: 85px;
-    opacity: 0.9;
-}
-
-.container .drop::before {
-    content: '';
-    position: absolute;
-    width: 35px;
-    height: 35px;
-    background-color: #fff;
-    border-radius: 50%;
-    top: 90px;
-    left: 110px;
-    opacity: 0.9;
-}
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border_box;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            background: #eff0f4;
+        }
+        
+        .header {
+            margin-top: 30px;
+        }
+        
+        .header h1 {
+            /* Code for the gradient */
+            color: -webkit-linear-gradient(left, #ff0f5b 0%, #01b4ff 100%);
+            background: -moz-linear-gradient(left, #ff0f5b 0%, #01b4ff 100%);
+            background: -o-linear-gradient(left, #ff0f5b 0%, #01b4ff 100%);
+            background: -ms-linear-gradient(left, #ff0f5b 0%, #01b4ff 100%);
+            background: linear-gradient(to right, #ff0f5b 0%, #01b4ff 100%);
+            /* Non-gradient code. This styles things like the text, box, border, etc */
+        }
+        
+        .container {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 50px 0;
+            gap: 40px 60px;
+        }
+        
+        .container .drop {
+            position: relative;
+            width: 350px;
+            height: 350px;
+            background: #fff;
+            box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0), 20px 35 px 20px rgba (0, 0, 0, 05), 25px 30px 30px rgba(0, 0, 0, 0), 20px 35 px 20px rgba (), inset -20px -20px 25px rgba (255, 2555, 255, 0.9);
+            transition: 0.5s ease-in-out;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .container .drop:nth-child(1) {
+            border-radius: 57% 43% 43% 57% /43% 43% 57% 57%;
+        }
+        
+        .container .drop:nth-child(2) {
+            border-radius: 61% 39% 52% 48% /44% 59% 41% 56%;
+        }
+        
+        .container .drop:nth-child(3) {
+            border-radius: 35% 65% 31% 69% /57% 59% 41% 43%;
+        }
+        
+        .container .drop:hover {
+            border-radius: 50%;
+            /* cursor: pointer; */
+        }
+        
+        .container .drop::before {
+            content: '';
+            position: absolute;
+            width: 35px;
+            height: 35px;
+            background-color: #fff;
+            border-radius: 50%;
+            top: 50px;
+            left: 85px;
+            opacity: 0.9;
+        }
+        
+        .container .drop::before {
+            content: '';
+            position: absolute;
+            width: 35px;
+            height: 35px;
+            background-color: #fff;
+            border-radius: 50%;
+            top: 90px;
+            left: 110px;
+            opacity: 0.9;
+        }
+        
+        .container .drop .content {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px;
+            gap: 15px;
+        }
+        
+        .container .drop .content p {
+            position: relative;
+            background: #eff0f4;
+            /* border-radius: 50%; */
+            /* box-sizing: border-box; */
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            font-size: 1em;
+            font-weight: 500;
+        }
+        
+        #one {
+            color: #ff0f5b;
+        }
+        
+        #two {
+            color: #be01fe;
+        }
+        
+        #three {
+            color: #01b4ff;
+        }
